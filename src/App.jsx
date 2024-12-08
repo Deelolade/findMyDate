@@ -7,7 +7,6 @@ const App = () => {
       <p>Welcome to the Metropolitan Museum of Art!</p>
       <p>This is a demo application.</p>
       <p>Feel free to explore the different components and see how they interact.</p>
-      <p>Enjoy your visit!</p>
     </div>
   )
 }

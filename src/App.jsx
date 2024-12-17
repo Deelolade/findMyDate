@@ -1,17 +1,18 @@
 import React from 'react'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './Pages/HomePage'
+import ProfilePage from './Pages/ProfilePage'
+import MatchesPage from './Pages/MatchesPage' 
 
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <h1>Hello, Metro!</h1>
-      <p>Welcome to the Metropolitan Museum of Art!</p>
-      <p>This is a demo application.</p>
-      <p>Feel free to explore the different components and see how they interact.</p>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path='/matches' element={<MatchesPage/>}/>
+      </Routes>
+    </Router>
   )
 }
 
